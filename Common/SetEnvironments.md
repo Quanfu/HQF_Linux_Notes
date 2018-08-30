@@ -1,21 +1,21 @@
-#Set Enviroments
+# Set Enviroments
 
-##Change user to `root`
+## Change user to `root`
 
-```
+```shell
 >sudo su - root 
 ```
 
-##Edit the `/etc/Profile` file
+## Edit the `/etc/Profile` file
 
-```
+```shell
 >vi /etc/profile
 ```
 
 then change the `profile` as you want to
 
 some changes eg.
-```
+``` shell
 
 #jdk home by HQF
 JAVA_HOME=/home/tools/jdk1.8.0_77
@@ -36,11 +36,11 @@ export PATH
 ```
 
 
-##Make all Available
+## Make all Available
 
-```
+```shell
 >source /etc/profile
 ```
 
 
-##More
+## More
