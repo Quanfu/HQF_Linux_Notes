@@ -1,9 +1,9 @@
 # install Docker
 
+
+
+> root@ubuntu:~# sudo apt-get update
 ```
-root@ubuntu:~# duso apt-get update
-duso: command not found
-root@ubuntu:~# sudo apt-get update
 Hit:1 http://us.archive.ubuntu.com/ubuntu bionic InRelease                                                
 Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]                               
 Get:3 http://us.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]       
@@ -18,7 +18,10 @@ Package 'docker-engine' is not installed, so not removed
 Package 'docker' is not installed, so not removed
 Package 'docker.io' is not installed, so not removed
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-root@ubuntu:~# sudo apt-get install  docker.io
+```
+> root@ubuntu:~# sudo apt-get install  docker.io
+
+```
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -93,6 +96,17 @@ Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/
 Processing triggers for systemd (237-3ubuntu10.33) ...
 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 Processing triggers for ureadahead (0.100.0-21) ...
+```
+
+> root@ubuntu:~# sudo systemctl start docker
+
+> root@ubuntu:~# sudo systemctl enable docker
+
+```
+Synchronizing state of docker.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable docker
+root@ubuntu:~# docker --version
+Docker version 18.09.7, build 2d0083d
 ```
 
 ## Reference
