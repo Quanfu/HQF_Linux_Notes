@@ -105,7 +105,11 @@ Processing triggers for ureadahead (0.100.0-21) ...
 ```
 Synchronizing state of docker.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable docker
-root@ubuntu:~# docker --version
+```
+
+> root@ubuntu:~# docker --version
+
+```
 Docker version 18.09.7, build 2d0083d
 ```
 
